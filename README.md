@@ -1,4 +1,7 @@
-![Uploading image.png…]()
+![image](https://github.com/edwin659898/occorences-book/assets/62498603/6e5ce146-8b36-4226-abc4-c759452a10c3)
+
+
+![image](https://github.com/edwin659898/occorences-book/assets/62498603/fe600262-e34f-4eca-b5ac-d098e3c54a87)
 
 
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400"></a></p>
