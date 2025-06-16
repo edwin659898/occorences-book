@@ -38,6 +38,7 @@ class UserResource extends Resource
                 TextInput::make('job_title')
                     ->label('Job Title'),
                 TextInput::make('email')
+                // changed disabled //
                     ->label('Email')->disabled(),
                 Select::make('site')
                     ->label('Site')
