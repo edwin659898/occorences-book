@@ -18,10 +18,17 @@
     @unless($hasBeenSent)
     {{ $this->form }}
 
-    <a href="{{ route('your.target.route') }}" class="inline-flex items-center justify-center w-full px-4 py-2 text-sm font-medium text-white bg-primary-600 border border-transparent rounded-md hover:bg-primary-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary-500">
-    {{ __('filament-breezy::default.reset_password.submit.label') }}
-</a>
+    {{-- <x-filament::button type="submit" class="w-full">
+        {{ __('filament-breezy::default.reset_password.submit.label') }}
+    </x-filament::button> --}}
+   {{-- <form method="POST" action="{{ route('password.update') }}"> --}}
+    @csrf
+    <!-- Any input fields you need -->
 
+    <x-filament::button type="submit" class="w-full">
+        {{ __('filament-breezy::default.reset_password.submit.label') }}
+    </x-filament::button>
+{{-- </form> --}}
     @else
     <span class="block text-center text-success-600 font-semibold">{{ __('filament-breezy::default.reset_password.notification_success') }}</span>
     @endunless
