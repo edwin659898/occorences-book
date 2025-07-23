@@ -16,18 +16,12 @@
     </div>
 
     @unless($hasBeenSent)
+    <form wire:submit.prevent="submit">
     {{ $this->form }}
 
     <x-filament::button type="submit" class="w-full">
         {{ __('filament-breezy::default.reset_password.submit.label') }}
     </x-filament::button>
-   {{-- <form method="POST" action="{{ route('password.update') }}"> --}}
-    @csrf
-    <!-- Any input fields you need -->
-
-    {{-- <x-filament::button type="submit" class="w-full">
-        {{ __('filament-breezy::default.reset_password.submit.label') }}
-    </x-filament::button> --}}
 </form>
     @else
     <span class="block text-center text-success-600 font-semibold">{{ __('filament-breezy::default.reset_password.notification_success') }}</span>
